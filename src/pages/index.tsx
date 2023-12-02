@@ -7,7 +7,7 @@ let idade = "38"
 
 function Topo() {
   return (
-    <div>Topo</div>
+    <div>Topo do {nome}</div>
   )
 }
 
