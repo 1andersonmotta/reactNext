@@ -13,9 +13,9 @@ function Topo() {
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex justify-between items-center bg-slate-500">
       <Topo></Topo>
-      <div>olá mundo do {nome}</div>
+      <div >olá mundo do {nome}</div>
       <div>olá mundo - {idade}</div>
     </main>
   )
