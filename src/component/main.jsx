@@ -3,10 +3,10 @@ import React from 'react';
 const Main = () => {
     return (
         <main>
-            <article aria-label="seção sobre mim" classNameName="sobre" id="sobre">
-                <div classNameName="sobre_titulo"></div>
-                <div classNameName="sobre_conteudo">
-                    <div id="info" classNameName="sobre_texto">
+            <article aria-label="seção sobre mim" className="sobre" id="sobre">
+                <div className="sobre_titulo"></div>
+                <div className="sobre_conteudo">
+                    <div id="info" className="sobre_texto">
                         <h1>Anderson Motta</h1>
                         <p>
                             É com grande entusiasmo que me apresento como um apaixonado pela arte de solucionar problemas e
@@ -36,20 +36,20 @@ const Main = () => {
                             Estou à disposição para discutir como minha experiência e habilidades podem contribuir para o sucesso de sua empresa.
                         </p>
                     </div>
-                    <div classNameName="sobre_info">
-                        <p><i classNameName="fa-solid fa-calendar-days"></i>Data de aniversário: 16 jun 1985</p>
-                        <p><i classNameName="fa-brands fa-github-alt"></i><a style={{ color: '#707070' }}
+                    <div className="sobre_info">
+                        <p><i className="fa-solid fa-calendar-days"></i>Data de aniversário: 16 jun 1985</p>
+                        <p><i className="fa-brands fa-github-alt"></i><a style={{ color: '#707070' }}
                             href="https://github.com/1andersonmotta" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </p>
-                        <p><i classNameName="fa-solid fa-location-dot"></i>Endereço: Sorocaba, Brasil, São Paulo</p>
-                        <p><i classNameName="fa-brands fa-linkedin-in"></i><a style={{ color: '#707070' }}
+                        <p><i className="fa-solid fa-location-dot"></i>Endereço: Sorocaba, Brasil, São Paulo</p>
+                        <p><i className="fa-brands fa-linkedin-in"></i><a style={{ color: '#707070' }}
                             href="https://www.linkedin.com/in/anderson-motta-96b138235/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </p>
-                        <p><i classNameName="fa-brands fa-whatsapp"></i>
+                        <p><i className="fa-brands fa-whatsapp"></i>
                             <a style={{ color: '#707070' }} href="https://wa.me/5515997504755" target="_blank" rel="noopener noreferrer">Telefone: (15) 99789-7412</a>
                         </p>
                         <p>
-                            <i classNameName="fa-solid fa-envelope"></i>Email: devandersonmotta@gmail.com
+                            <i className="fa-solid fa-envelope"></i>Email: devandersonmotta@gmail.com
                         </p>
                     </div>
                 </div>
