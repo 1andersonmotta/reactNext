@@ -3,11 +3,11 @@
 // import { Inter } from 'next/font/google'
 // const inter = Inter({ subsets: ['latin'] })
 
-import VideoComponent from "@/component/background-video";
-import Header from "@/component/header";
-import Anime from "@/component/anime";
-import Component from "@/component/component";
-import Main from "@/component/main";
+import VideoComponent from "@/components/background-video";
+import Header from "@/components/header";
+import Anime from "@/components/anime";
+import Component from "@/components/component";
+import Main from "@/components/main";
 
 export default function Home() {
   return (
