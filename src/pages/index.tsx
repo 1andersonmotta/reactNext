@@ -8,6 +8,7 @@ import Header from "@/components/header";
 import Anime from "@/components/anime";
 import Component from "@/components/component";
 import Main from "@/components/main";
+import Services from "@/components/services";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <VideoComponent></VideoComponent>
       <Component></Component>
       <Main></Main>
+      <Services></Services>
       <Anime></Anime>
     </main>
   )
