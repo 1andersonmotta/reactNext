@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
-// import Image from 'next/image'
-// import { Inter } from 'next/font/google'
-// const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image'
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 import VideoComponent from "@/components/background-video";
 import Header from "@/components/header";
