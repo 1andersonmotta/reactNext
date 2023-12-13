@@ -1,4 +1,86 @@
+/* eslint-disable react/no-unescaped-entities */
 const Experience = () => {
+    function sobreMim() {
+        const divExperiencia = document.querySelectorAll('.experience_content div')
+        const liExperiencia = document.querySelectorAll('.experience_content ul li')
+        const divEducation = document.querySelectorAll('.education_content div')
+        const liEducation = document.querySelectorAll('.education_content ul li')
+
+
+        divExperiencia[0].classList.add('ativo')
+        divEducation[0].classList.add('ativo')
+        liExperiencia[0].classList.add('ativo')
+        liEducation[0].classList.add('ativo')
+
+        function slideShow(index) {
+            divExperiencia.forEach((div) => {
+                div.classList.remove('ativo');
+            })
+            liExperiencia.forEach((botao) => {
+                botao.classList.remove('ativo');
+            })
+            divExperiencia[index].classList.add('ativo')
+            liExperiencia[index].classList.add('ativo')
+        }
+
+        function slideShow2(index) {
+            divEducation.forEach((div) => {
+                div.classList.remove('ativo');
+            })
+            liEducation.forEach((botao) => {
+                botao.classList.remove('ativo');
+            })
+            divEducation[index].classList.add('ativo')
+            liEducation[index].classList.add('ativo')
+        }
+
+        liExperiencia.forEach((event, index) => {
+            event.addEventListener('click', () => {
+                slideShow(index)
+            });
+        });
+
+        liEducation.forEach((event, index) => {
+            event.addEventListener('click', () => {
+                slideShow2(index)
+            });
+        });
+    }
+
+    sobreMim()
+
+    const divEducation = document.querySelectorAll('.education_content div')
+    const liEducation = document.querySelectorAll('.education_content ul li')
+    function slideShow2(index) {
+        divEducation.forEach((div) => {
+            div.classList.remove('ativo');
+        })
+        liEducation.forEach((botao) => {
+            botao.classList.remove('ativo');
+        })
+        divEducation[index].classList.add('ativo')
+        if (index == 7) { index = 0 }
+        liEducation[index].classList.add('ativo')
+    }
+
+    let contador = 1
+    function show() {
+        if (contador == 7) {
+            slideShow2(7);
+            return contador = 0
+        }
+        slideShow2(contador);
+        return contador++
+    }
+    function clickou() {
+        if (contador == 7) {
+            slideShow2(7);
+            return contador = 0
+        }
+        slideShow2(contador);
+        return contador++
+    }
+
     return (
         <div className="my_resume">
             <div className="sobre_titulo">
@@ -26,7 +108,7 @@ const Experience = () => {
                     </ul>
                 </div>
                 <h2 className="education"><i className="fa-solid fa-book"></i>FORMAÇÃO - CURSOS</h2>
-                <div className="education_content" onClick="clickou()">
+                <div className="education_content" onClick={clickou() as any}>
                     <div>
                         <span>2023-2025 - Cursando</span>
                         <h3>• Análise e Desenvolvimento de Sistemas - Cruzeiro do Sul S.A, Sorocaba </h3>
