@@ -9,6 +9,7 @@ import Anime from "@/components/anime";
 import Component from "@/components/component";
 import Main from "@/components/main";
 import Services from "@/components/services";
+import Experience from "@/components/experience";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Component></Component>
       <Main></Main>
       <Services></Services>
+      <Experience></Experience>
       <Anime></Anime>
     </main>
   )
