@@ -109,7 +109,7 @@ header .navegacao-primaria li a:hover::after {
 }
 
 .section-div div h2 {
-
+    font-size: x-large;
     font-family: 'Poppins';
     text-shadow: 2px 2px black;
     font-weight: 600;
