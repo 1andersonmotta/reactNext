@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Main = () => {
+
     return (
         <main>
             <article aria-label="seção sobre mim" className="sobre" id="sobre">
