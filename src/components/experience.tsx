@@ -1,21 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Experience = () => {
-    useEffect(() => {
-        const divExperiencia = document.querySelectorAll('.experience_content div');
-        const liExperiencia = document.querySelectorAll('.experience_content ul li');
-        const divEducation = document.querySelectorAll('.education_content div');
-        const liEducation = document.querySelectorAll('.education_content ul li');
+    const [contador, setContador] = useState(1);
 
-        divExperiencia[0].classList.add('ativo');
-        divEducation[0].classList.add('ativo');
-        liExperiencia[0].classList.add('ativo');
-        liEducation[0].classList.add('ativo');
+    const divExperienciaRef = useRef([]);
+    const liExperienciaRef = useRef([]);
+    const divEducationRef = useRef([]);
+    const liEducationRef = useRef([]);
+
+    useEffect(() => {
+        divExperienciaRef.current = document.querySelectorAll('.experience_content div');
+        liExperienciaRef.current = document.querySelectorAll('.experience_content ul li');
+        divEducationRef.current = document.querySelectorAll('.education_content div');
+        liEducationRef.current = document.querySelectorAll('.education_content ul li');
+
+        divExperienciaRef.current[0].classList.add('ativo');
+        divEducationRef.current[0].classList.add('ativo');
+        liExperienciaRef.current[0].classList.add('ativo');
+        liEducationRef.current[0].classList.add('ativo');
 
         function slideShow(index, isEducation = false) {
-            const divList = isEducation ? divEducation : divExperiencia;
-            const liList = isEducation ? liEducation : liExperiencia;
+            const divList = isEducation ? divEducationRef.current : divExperienciaRef.current;
+            const liList = isEducation ? liEducationRef.current : liExperienciaRef.current;
 
             divList.forEach((div) => div.classList.remove('ativo'));
             liList.forEach((botao) => botao.classList.remove('ativo'));
@@ -24,34 +31,32 @@ const Experience = () => {
             liList[index].classList.add('ativo');
         }
 
-        liExperiencia.forEach((event, index) => {
+        liExperienciaRef.current.forEach((event, index) => {
             event.addEventListener('click', () => {
                 slideShow(index);
             });
         });
 
-        liEducation.forEach((event, index) => {
+        liEducationRef.current.forEach((event, index) => {
             event.addEventListener('click', () => {
                 slideShow(index, true);
             });
         });
 
         return () => {
-            liExperiencia.forEach((event, index) => {
+            liExperienciaRef.current.forEach((event, index) => {
                 event.removeEventListener('click', () => {
                     slideShow(index);
                 });
             });
 
-            liEducation.forEach((event, index) => {
+            liEducationRef.current.forEach((event, index) => {
                 event.removeEventListener('click', () => {
                     slideShow(index, true);
                 });
             });
         };
     }, []);
-
-    const [contador, setContador] = useState(1);
 
     function slideShow2(index) {
         const divEducation = document.querySelectorAll('.education_content div');
@@ -79,8 +84,8 @@ const Experience = () => {
 
     function clickou() {
         if (contador === 7) {
-            slideShow2(7);
-            setContador(0);
+            slideShow2(0);
+            setContador(1);
         } else {
             slideShow2(contador);
             setContador((prevContador) => prevContador + 1);
@@ -120,6 +125,79 @@ const Experience = () => {
                         <h3>• Análise e Desenvolvimento de Sistemas - Cruzeiro do Sul S.A, Sorocaba </h3>
                         <p>Cursando Análise e Desenvolvimento de Sistemas </p>
                     </div>
+                    <div>
+                        <span>2009-2011 - Concluído </span>
+                        <h3>• Tecnologia em Eventos - CEUNSP</h3>
+                        <p>Curso Superior de Tecnologia em Eventos - Centro Universitário Nossa Senhora do
+                            Patrocínio - Criação e Organização de Eventos.
+                        </p>
+                    </div>
+                    <div>
+                        <span>2022-2022 </span>
+                        <h3>• CURSOS - ALURA</h3>
+                        <p>- PostgreSQL primeiros passos com SQL<br />
+                            - NodeJs criando sua primeira biblioteca<br />
+                            - NestJS criando uma API Rest com TypeScript<br />
+                            - JavaScript programando a Orientação a Objetos<br />
+                            - JavaScript primeiros passos da programação orientada a objetos<br />
+                            - Fundamentos do JavaScript objetos<br />
+                            - Fundamentos do JavaScript Arrays<br />
+                            - Algoritmos com JavaScript II aprofundando em algoritmos de ordenação e busca<br />
+                            - Algoritmos com JavaScript I iniciando com algoritmos de ordenação<br />
+                            - Expressões regulares: capturando textos de forma mágica<br />
+                            - JavaScript: explorando a linguagem<br />
+                            - JavaScript: tipos, variáveis e funções<br />
+                            - NodeJS: Streaming de dados e Repositório<br />
+                            - PostgreSQL: comandos DML e DDL<br />
+                            - PostgreSQL: Views, Sub-Consultas e Funções<br />
+                            - TypeScript parte 1: evoluindo seu JavaScript<br />
+                            - TypeScript parte 2: avançando na linguagem<br />
+                            - Typescript parte 3: mais técnicas e boas práticas<br />
+
+                        </p>
+                    </div>
+                    <div>
+                        <span>2021-2022 </span>
+                        <h3>• CURSOS - GRASSHOPER GOOGLE POR LAURA HOMES</h3>
+                        <p>- Fundamentos de Codificação<br />
+                            - Fundamentos de Programação II<br />
+                            - Introdução à Entrevista<br />
+                            - Animações<br />
+                            - Animações II<br />
+                            - Uso de um editor de código<br />
+                            - Intro to Webpages<br />
+                            - Automation<br />
+                        </p>
+                    </div>
+                    <div>
+                        <span>2021-2022 </span>
+                        <h3>• CURSOS - Canal Curso em Video </h3>
+                        <p>- Curso Grátis de JavaScript e ECMAScript para Iniciantes por Gustavo Guanabara Patrocinado pelo
+                            Google. <br />
+                            - Curso de HTML5 e Css3 por Gustavo Guanabara
+                        </p>
+                    </div>
+                    <div>
+                        <span>2021-2022 </span>
+                        <h3>• CURSOS - Canal Dev Aprender </h3>
+                        <p>- Curso Javascript Completo 2020 [Iniciantes] + 14 Mini-Projetos
+                        </p>
+                    </div>
+                    <div>
+                        <span>2018-2018 </span>
+                        <h3>• CURSOS - SENAI </h3>
+                        <p>- Curso Montagen, Desmontagem e Configuração de Microcomputadores
+                        </p>
+                    </div>
+                    <ul>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                    </ul>
                     {/* Adicione os demais itens aqui */}
                     <ul>
                         {Array.from({ length: 7 }).map((_, index) => (
