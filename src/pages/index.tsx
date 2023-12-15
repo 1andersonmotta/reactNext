@@ -10,6 +10,8 @@ import Component from "@/components/component";
 import Main from "@/components/main";
 import Services from "@/components/services";
 import Experience from "@/components/experience";
+import Skills from "@/components/skills";
+import Facts from "@/components/facts";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <Main></Main>
       <Services></Services>
       <Experience></Experience>
+      <Skills></Skills>
+      <Facts></Facts>
       <Anime></Anime>
     </main>
   )
