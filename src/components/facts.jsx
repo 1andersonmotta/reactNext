@@ -72,6 +72,7 @@ const Facts = () => {
                                                                                                                 </li>
                                                                                                             </ul>
                                                                                                         </div> --> */}
+
         </div>
     )
 }
