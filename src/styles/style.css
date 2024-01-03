@@ -158,7 +158,6 @@ header .navegacao-primaria li a:hover::after {
     }
 }
 
-
 @keyframes inicializar {
     from {
         opacity: 0;
