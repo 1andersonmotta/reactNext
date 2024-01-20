@@ -12,10 +12,12 @@ import Services from "@/components/services";
 import Experience from "@/components/experience";
 import Skills from "@/components/skills";
 import Facts from "@/components/facts";
+import Video from "@/components/video";
 
 export default function Home() {
   return (
     <main >
+      <Video></Video>
       <Header />
       <VideoComponent></VideoComponent>
       <Component></Component>
