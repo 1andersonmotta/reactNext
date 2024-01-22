@@ -110,8 +110,7 @@ const Experience = () => {
                             <h3>• Tegra LTDA</h3>
                             <p>
                                 Empresa com sede em Sorocaba-SP que disponibiliza os Serviços de Desenvolvimento de Software,
-                                Alocação de Squad e Hunting com mais de 10 anos no mercado na
-                                qual atingida pela crise no mercado "lay-off" encerrou nossa parceria.
+                                Alocação de Squad e Hunting com mais de 10 anos no mercado.
                             </p>
                         </a>
                     </div>
