@@ -5,6 +5,11 @@ const Facts = () => {
             <div className="funfacts">
                 <ul>
                     <li>
+                        <i className="fa-sharp fa-solid fa-hand-holding-dollar"></i>
+                        <span>Contrato</span>
+                        <p>PJ ou CLT</p>
+                    </li>
+                    <li>
                         <i className="fa-solid fa-mug-hot"></i>
                         <span>100%</span>
                         <p>Disponível</p>
@@ -20,11 +25,6 @@ const Facts = () => {
                         <p>A Estudar </p>
                     </li>
                     <li>
-                        <i className="fa-sharp fa-solid fa-hand-holding-dollar"></i>
-                        <span>Contrato</span>
-                        <p>PJ ou CLT</p>
-                    </li>
-                    <li>
                         <i className="fa-solid fa-thumbs-up"></i>
                         <span>100%</span>
                         <p>Responsável</p>
@@ -33,16 +33,6 @@ const Facts = () => {
                         <i className="fa-regular fa-lightbulb"></i>
                         <span>Perfil</span>
                         <p>Criativo</p>
-                    </li>
-                    <li>
-                        <i className="fa-solid fa-microphone-lines"></i>
-                        <span>Boa</span>
-                        <p>Comunicação </p>
-                    </li>
-                    <li>
-                        <i className="fa-solid fa-heart-pulse"></i>
-                        <span>Realiza</span>
-                        <p>Atividade Física</p>
                     </li>
                 </ul>
             </div>
