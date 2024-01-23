@@ -675,9 +675,6 @@ main .sobre {
 /*CURSOS E SKILLS*/
 
 .cursos {
-    margin-top: 50px;
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     align-items: center;
     display: column;
     padding: 30px;
