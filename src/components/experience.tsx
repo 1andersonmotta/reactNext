@@ -102,7 +102,7 @@ const Experience = () => {
     return (
         <div className="my_resume">
             <div className="resume_generico">
-                <h2 className="experience"><i><FontAwesomeIcon icon="fa-solid fa-handshake-simple" /></i>EXPERIÊNCIA</h2>
+                <h2 className="experience"><i><FontAwesomeIcon icon={faHandshakeSimple} /></i>EXPERIÊNCIA</h2>
                 <div className="experience_content">
                     <div>
                         <a style={{ color: '#f7f7f7' }} href="https://tegra.com.br/" target="_blank">
@@ -115,10 +115,10 @@ const Experience = () => {
                         </a>
                     </div>
                     <ul>
-                        <li><i style={{ display: 'none' }}><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i style={{ display: 'none' }}><FontAwesomeIcon icon={faCircle} /></i></li>
                     </ul>
                 </div>
-                <h2 className="education"><i><FontAwesomeIcon icon="fa-solid fa-book" /></i>FORMAÇÃO - CURSOS</h2>
+                <h2 className="education"><i><FontAwesomeIcon icon={faBook} /></i>FORMAÇÃO - CURSOS</h2>
                 <div className="education_content" onClick={clickou}>
                     <div>
                         <span>2023-2025 - Cursando</span>
@@ -190,13 +190,13 @@ const Experience = () => {
                         </p>
                     </div>
                     <ul>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
-                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
+                        <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
                     </ul>
                     {/* Adicione os demais itens aqui */}
                     <ul>
