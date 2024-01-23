@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useRef, useState } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBook, faCircle, faHandshakeSimple } from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +14,12 @@ const Experience = () => {
     const divEducationRef = useRef([]);
     const liEducationRef = useRef([]);
 
+    // const divExperienciaRef = useRef<NodeListOf<HTMLDivElement>>(document.querySelectorAll('.experience_content div'));
+    // const liExperienciaRef = useRef<NodeListOf<HTMLLIElement>>(document.querySelectorAll('.experience_content ul li'));
+    // const divEducationRef = useRef<NodeListOf<HTMLDivElement>>(document.querySelectorAll('.education_content div'));
+    // const liEducationRef = useRef<NodeListOf<HTMLLIElement>>(document.querySelectorAll('.education_content ul li'));
+
+
     useEffect(() => {
         divExperienciaRef.current = document.querySelectorAll('.experience_content div');
         liExperienciaRef.current = document.querySelectorAll('.experience_content ul li');
@@ -27,7 +31,7 @@ const Experience = () => {
         liExperienciaRef.current[0].classList.add('ativo');
         liEducationRef.current[0].classList.add('ativo');
 
-        function slideShow(index, isEducation = false) {
+        function slideShow(index: number, isEducation = false) {
             const divList = isEducation ? divEducationRef.current : divExperienciaRef.current;
             const liList = isEducation ? liEducationRef.current : liExperienciaRef.current;
 
@@ -65,7 +69,7 @@ const Experience = () => {
         };
     }, []);
 
-    function slideShow2(index) {
+    function slideShow2(index: number) {
         const divEducation = document.querySelectorAll('.education_content div');
         const liEducation = document.querySelectorAll('.education_content ul li');
 
