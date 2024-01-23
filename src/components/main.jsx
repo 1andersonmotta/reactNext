@@ -1,4 +1,11 @@
 import React from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBook, faCalendarDays, faCat, faCircle, faHandshakeSimple, faLink, faLocationDot, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Adicione os ícones à biblioteca
+library.add(faCalendarDays, faLocationDot, faLink, faCat, faPhone, faMailBulk);
 
 const Main = () => {
 
@@ -38,19 +45,19 @@ const Main = () => {
                         </p>
                     </div>
                     <div className="sobre_info">
-                        <p><i className="fa-solid fa-calendar-days"></i>Data de aniversário: 16 jun 1985</p>
-                        <p><i className="fa-brands fa-github-alt"></i><a style={{ color: '#707070' }}
+                        <p><i><FontAwesomeIcon icon={faCalendarDays} /></i>Data de aniversário: 16 jun 1985</p>
+                        <p><i ><FontAwesomeIcon icon={faCat} /></i><a style={{ color: '#707070' }}
                             href="https://github.com/1andersonmotta" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </p>
-                        <p><i className="fa-solid fa-location-dot"></i>Endereço: Sorocaba, Brasil, São Paulo</p>
-                        <p><i className="fa-brands fa-linkedin-in"></i><a style={{ color: '#707070' }}
+                        <p><i><FontAwesomeIcon icon={faLocationDot} /></i>Endereço: Sorocaba, Brasil, São Paulo</p>
+                        <p><i><FontAwesomeIcon icon={faLink} /></i><a style={{ color: '#707070' }}
                             href="https://www.linkedin.com/in/anderson-motta-96b138235/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </p>
-                        <p><i className="fa-brands fa-whatsapp"></i>
+                        <p><i><FontAwesomeIcon icon={faPhone} /></i>
                             <a style={{ color: '#707070' }} href="https://wa.me/5515997504755" target="_blank" rel="noopener noreferrer">Telefone: (15) 99789-7412</a>
                         </p>
                         <p>
-                            <i className="fa-solid fa-envelope"></i>Email: devandersonmotta@gmail.com
+                            <i><FontAwesomeIcon icon={faMailBulk} /></i>Email: devandersonmotta@gmail.com
                         </p>
                     </div>
                 </div>
