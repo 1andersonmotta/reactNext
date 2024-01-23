@@ -1,9 +1,8 @@
-/* eslint-disable react/jsx-no-undef */
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
-import VideoComponent from "@/components/background-video";
+import BackgroundComponent from "@/components/background-video";
 import Header from "@/components/header";
 import Anime from "@/components/anime";
 import Component from "@/components/component";
@@ -19,7 +18,7 @@ export default function Home() {
     <main >
       <Video></Video>
       <Header />
-      <VideoComponent></VideoComponent>
+      <BackgroundComponent></BackgroundComponent>
       <Component></Component>
       <Main></Main>
       <Services></Services>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBook, faCalendarDays, faCat, faCircle, faHandshakeSimple, faLink, faLocationDot, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Adicione os ícones à biblioteca
