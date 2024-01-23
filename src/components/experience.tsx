@@ -1,6 +1,12 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useRef, useState } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBook, faCircle, faHandshakeSimple } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Adicione os ícones à biblioteca
+library.add(faHandshakeSimple, faCircle, faBook);
 
 const Experience = () => {
     const [contador, setContador] = useState(1);
@@ -95,14 +101,8 @@ const Experience = () => {
 
     return (
         <div className="my_resume">
-            <div className="sobre_titulo">
-                <h1 id="experiencia">Experiência</h1>
-                <div aria-label="Seção apenas de ilustrações de botões">
-                    <span></span>
-                </div>
-            </div>
             <div className="resume_generico">
-                <h2 className="experience"><i className="fa-solid fa-handshake"></i>EXPERIÊNCIA</h2>
+                <h2 className="experience"><i><FontAwesomeIcon icon="fa-solid fa-handshake-simple" /></i>EXPERIÊNCIA</h2>
                 <div className="experience_content">
                     <div>
                         <a style={{ color: '#f7f7f7' }} href="https://tegra.com.br/" target="_blank">
@@ -115,10 +115,10 @@ const Experience = () => {
                         </a>
                     </div>
                     <ul>
-                        <li><i className="fa-sharp fa-solid fa-circle" style={{ display: 'none' }}></i></li>
+                        <li><i style={{ display: 'none' }}><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
                     </ul>
                 </div>
-                <h2 className="education"><i className="fa-solid fa-book"></i>FORMAÇÃO - CURSOS</h2>
+                <h2 className="education"><i><FontAwesomeIcon icon="fa-solid fa-book" /></i>FORMAÇÃO - CURSOS</h2>
                 <div className="education_content" onClick={clickou}>
                     <div>
                         <span>2023-2025 - Cursando</span>
@@ -190,18 +190,18 @@ const Experience = () => {
                         </p>
                     </div>
                     <ul>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
-                        <li><i className="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
+                        <li><i ><FontAwesomeIcon icon="fa-solid fa-circle" /></i></li>
                     </ul>
                     {/* Adicione os demais itens aqui */}
                     <ul>
                         {Array.from({ length: 7 }).map((_, index) => (
-                            <li key={index}><i className="fa-sharp fa-solid fa-circle"></i></li>
+                            <li key={index}><i></i></li>
                         ))}
                     </ul>
                 </div>
