@@ -1,68 +1,48 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGraduationCap, faHandHoldingDollar, faLightbulb, faMedal, faMugHot, faStar, faStarHalfStroke, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Adicione os ícones à biblioteca
+library.add(faHandHoldingDollar, faMugHot, faMedal, faGraduationCap, faThumbsUp, faLightbulb);
+
 const Facts = () => {
     return (
         <div className="cursos">
-            <h2><i className="fa-solid fa-heart"></i>FATOS</h2>
+            <h2>FATOS</h2>
             <div className="funfacts">
                 <ul>
                     <li>
-                        <i className="fa-sharp fa-solid fa-hand-holding-dollar"></i>
+                        <i><FontAwesomeIcon icon="fa-solid fa-hand-holding-dollar" /></i>
                         <span>Contrato</span>
                         <p>PJ ou CLT</p>
                     </li>
                     <li>
-                        <i className="fa-solid fa-mug-hot"></i>
+                        <i><FontAwesomeIcon icon="fa-solid fa-mug-hot" /></i>
                         <span>100%</span>
                         <p>Disponível</p>
                     </li>
                     <li>
-                        <i className="fa-solid fa-medal"></i>
+                        <i><FontAwesomeIcon icon="fa-solid fa-medal" /></i>
                         <span>32</span>
                         <p>Cerificados</p>
                     </li>
                     <li>
-                        <i className="fa-solid fa-graduation-cap"></i>
-                        <span>Disposto</span>
-                        <p>A Estudar </p>
+                        <i><FontAwesomeIcon icon="fa-solid fa-graduation-cap" /></i>
+                        <span>Superior</span>
+                        <p>ADS Cursando</p>
                     </li>
                     <li>
-                        <i className="fa-solid fa-thumbs-up"></i>
+                        <i><FontAwesomeIcon icon="fa-solid fa-thumbs-up" /></i>
                         <span>100%</span>
                         <p>Responsável</p>
                     </li>
                     <li>
-                        <i className="fa-regular fa-lightbulb"></i>
+                        <i><FontAwesomeIcon icon="fa-solid fa-lightbulb" /></i>
                         <span>Perfil</span>
                         <p>Criativo</p>
                     </li>
                 </ul>
             </div>
-
-            {/* <!-- <div className="funfacts">
-                                                                                                            <h2><i className="fa-solid fa-heart"></i>FATOS</h2>
-                                                                                                            <ul>
-                                                                                                                <li>
-                                                                                                                    <i className="fa-solid fa-mug-hot"></i>
-                                                                                                                    <span>100%</span>
-                                                                                                                    <p>Disponível</p>
-                                                                                                                </li>
-                                                                                                                <li>
-                                                                                                                    <i className="fa-solid fa-medal"></i>
-                                                                                                                    <span>32</span>
-                                                                                                                    <p>Cerificados</p>
-                                                                                                                </li>
-                                                                                                                <li>
-                                                                                                                    <i className="fa-solid fa-graduation-cap"></i>
-                                                                                                                    <span>Disposto</span>
-                                                                                                                    <p>Estudar </p>
-                                                                                                                </li>
-                                                                                                                <li>
-                                                                                                                    <i className="fa-sharp fa-solid fa-hand-holding-dollar"></i>
-                                                                                                                    <span>Contrato</span>
-                                                                                                                    <p>PJ ou CLT</p>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </div> --> */}
-
         </div>
     )
 }
