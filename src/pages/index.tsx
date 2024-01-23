@@ -2,12 +2,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGraduationCap, faHandHoldingDollar, faLightbulb, faMedal, faMugHot, faStar, faStarHalfStroke, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// Adicione os ícones à biblioteca
-library.add(faHandHoldingDollar, faMugHot, faMedal, faGraduationCap, faThumbsUp, faLightbulb);
 
 import VideoComponent from "@/components/background-video";
 import Header from "@/components/header";
