@@ -296,7 +296,7 @@ main .sobre {
 
 .sobre_info p {
     font-family: 'Poppins';
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 @keyframes sobeSecao {
