@@ -19,7 +19,6 @@ const Experience = () => {
     // const divEducationRef = useRef<NodeListOf<HTMLDivElement>>(document.querySelectorAll('.education_content div'));
     // const liEducationRef = useRef<NodeListOf<HTMLLIElement>>(document.querySelectorAll('.education_content ul li'));
 
-
     useEffect(() => {
         divExperienciaRef.current = document.querySelectorAll('.experience_content div');
         liExperienciaRef.current = document.querySelectorAll('.experience_content ul li');
@@ -157,7 +156,6 @@ const Experience = () => {
                             - TypeScript parte 1: evoluindo seu JavaScript<br />
                             - TypeScript parte 2: avançando na linguagem<br />
                             - Typescript parte 3: mais técnicas e boas práticas<br />
-
                         </p>
                     </div>
                     <div>
