@@ -82,15 +82,15 @@ const Experience = () => {
         liEducation[index].classList.add('ativo');
     }
 
-    function show() {
-        if (contador === 7) {
-            slideShow2(7);
-            setContador(0);
-        } else {
-            slideShow2(contador);
-            setContador((prevContador) => prevContador + 1);
-        }
-    }
+    // function show() {
+    //     if (contador === 7) {
+    //         slideShow2(7);
+    //         setContador(0);
+    //     } else {
+    //         slideShow2(contador);
+    //         setContador((prevContador) => prevContador + 1);
+    //     }
+    // }
 
     function clickou() {
         if (contador === 7) {
