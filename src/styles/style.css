@@ -7,7 +7,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
 }
 
 p {
@@ -856,9 +855,9 @@ main .sobre {
     padding: 30px;
     display: grid;
     justify-content: center;
-    gap: 80px;
+    /* gap: 80px; */
     /* background-color: #000000; */
-    background-color: #151515c3;
+    /* background-color: #151515c3; */
 
 }
 
