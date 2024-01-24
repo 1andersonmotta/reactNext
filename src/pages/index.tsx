@@ -12,6 +12,7 @@ import Experience from "@/components/experience";
 import Skills from "@/components/skills";
 import Facts from "@/components/facts";
 import Video from "@/components/video";
+import ProjectsComponent from '@/components/projects';
 
 export default function Home() {
   return (
@@ -25,7 +26,8 @@ export default function Home() {
       <Experience></Experience>
       <Skills></Skills>
       <Facts></Facts>
-      <Anime></Anime>
+      {/* <Anime></Anime> */}
+      <ProjectsComponent />
     </main>
   )
 }
