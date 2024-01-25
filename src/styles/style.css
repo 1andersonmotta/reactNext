@@ -977,7 +977,7 @@ div#diferencial {
 
 footer {
     /* background-color: #000000; */
-    background-color: #151515c3;
+    /* background-color: #151515c3; */
 
     padding: 30px;
 }
@@ -992,9 +992,9 @@ footer {
 }
 
 .footer_sociais li {
-    background-color: #000000;
-    border-radius: 50%;
-    border: 1px solid #333333;
+    /* background-color: #000000; */
+    /* border-radius: 50%; */
+    /* border: 1px solid #333333; */
     margin-top: 20px;
 }
 
@@ -1004,11 +1004,11 @@ footer {
     color: #f7f7f7;
 }
 
-.footer_sociais li:hover {
+/* .footer_sociais li:hover {
     transition: .3s ease-in-out;
     cursor: pointer;
-    background-color: #3e3d3d;
-}
+    border: 1px solid #333333;
+} */
 
 /* .footer_sociais::before {
     content: '';
