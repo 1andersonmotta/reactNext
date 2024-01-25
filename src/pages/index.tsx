@@ -13,6 +13,7 @@ import Skills from "@/components/skills";
 import Facts from "@/components/facts";
 import Video from "@/components/video";
 import ProjectsComponent from '@/components/projects';
+import FooterComponent from '@/components/footer';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Facts></Facts>
       {/* <Anime></Anime> */}
       <ProjectsComponent />
+      <FooterComponent />
     </main>
   )
 }
