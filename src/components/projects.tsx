@@ -79,8 +79,8 @@ const ProjectsComponent = () => {
     // });
 
     return (
-        <section className="projects">
-
+        <section className="projects" id='projeto'>
+            <h2>PROJETOS</h2>
             <div className="projects_models">
                 <ul aria-label="Navegação entre modelos especificos de projetos">
                     <li onClick={() => { listAll() }} ref={buttonGeral} className="vermais">Exibir</li>
