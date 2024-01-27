@@ -884,11 +884,14 @@ main .sobre {
 }
 
 .projects_armazenamento ul {
-    display: grid;
+    /* display: grid; */
+    display: none;
     margin-top: 80px;
     gap: 120px 50px;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+
+    animation: animationImagemButton 2s ease-in-out forwards;
 }
 
 .projects_armazenamento ul li {
