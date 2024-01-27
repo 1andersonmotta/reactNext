@@ -57,7 +57,6 @@ const Facts = () => {
                     </li>
                 </ul>
             </div>
-            <h2 style={{ marginTop: 100 }}>PROJETOS</h2>
         </div>
     )
 }
