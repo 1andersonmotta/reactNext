@@ -1,8 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const ProjectsComponent = () => {
     // const listAll = document.querySelectorAll('.projects_armazenamento ul li');
+    const listAllRef = useRef(null);
+
     // const buttonGeral = document.querySelectorAll('.projects_models ul li');
+    const buttonGeral = useRef();
+
+    function listAll() {
+        if (listAllRef.current) {
+            if (buttonGeral.current.innerText == "Exibir") {
+                listAllRef.current.style.display = "grid"
+                buttonGeral.current.innerText = "Ocultar"
+            } else if (listAllRef.current.style.display == "grid" && buttonGeral.current.innerText == "Ocultar") {
+                listAllRef.current.style.display = "none"
+                buttonGeral.current.innerText = "Exibir"
+            };
+        }
+    }
+
 
     // const removeClick = (index) => {
     //     buttonGeral.forEach((item) => {
@@ -65,16 +81,13 @@ const ProjectsComponent = () => {
     return (
         <section className="projects">
 
-            {/* <div className="projects_models">
+            <div className="projects_models">
                 <ul aria-label="Navegação entre modelos especificos de projetos">
-                    <li className="all">Todos</li>
-                    <li className="reais">Reais</li>
-                    <li className="estudo">Estudos</li>
-                    <li className="website">Websites</li>
+                    <li onClick={() => { listAll() }} ref={buttonGeral} className="vermais">Exibir</li>
                 </ul>
-            </div> */}
+            </div>
             <div className="projects_armazenamento">
-                <ul className='ativo' aria-label="Navegação de projetos e websites">
+                <ul ref={listAllRef} aria-label="Navegação de projetos e websites">
                     <li className='ativo' id="reais">
                         <img src="/img/integraadmin.png" alt="fotodj1" />
                         <p>IntegraAdmin: Gestão de funcionários com controle e
