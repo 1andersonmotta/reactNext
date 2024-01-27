@@ -30,7 +30,7 @@ const Component = () => {
             <div>
                 <h2></h2>
                 <h2 ref={tituloRef} className="digitando">Desenvolvedor</h2>
-                <p>FullStack NodeJs | JavaScript | TypeScript </p>
+                <p>FullStack | NodeJs | JavaScript | TypeScript | React</p>
                 <a className="box" href="./AndersonParenteMottacv.pdf" download="">Download CV</a>
             </div>
         </section>
