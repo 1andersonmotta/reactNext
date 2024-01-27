@@ -103,7 +103,7 @@ const Experience = () => {
     }
 
     return (
-        <div className="my_resume">
+        <div className="my_resume" id="experiencia">
             <div className="resume_generico">
                 <h2 className="experience"><i><FontAwesomeIcon icon={faHandshakeSimple} /></i>EXPERIÊNCIA</h2>
                 <div className="experience_content">
