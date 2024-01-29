@@ -899,6 +899,7 @@ main .sobre {
     display: none;
     max-width: 100%;
     height: 100%;
+    text-shadow: 2px 2px 2px black;
 }
 
 .projects_armazenamento ul li p {
@@ -917,13 +918,7 @@ main .sobre {
     width: 100%;
     max-height: 200px;
     border-radius: 4px;
-    /* cursor: pointer; */
 }
-
-.projects_armazenamento ul li:hover {
-    text-shadow: 2px 2px 2px black;
-}
-
 
 .projects a {
     background-color: #000000;
