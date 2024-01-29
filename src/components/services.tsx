@@ -1,3 +1,5 @@
+import React from "react";
+
 const Services = () => {
     return (
         <section className="services">
@@ -7,14 +9,12 @@ const Services = () => {
                         <i className="fa-sharp fa-solid fa-pen-to-square"></i>
                         <h3>• Linguagem de Programação </h3>
                         <p>JavaScript e TypeScript</p>
-
                     </li>
                     <li>
                         <i className="fa-sharp fa-solid fa-pen-to-square"></i>
                         <h3>• Conhecimentos </h3>
                         <p>NodeJs, NestJs, Express, TypeORM, Sequelize, Prisma, Serverless
-                            <br />,
-                            Regex, Graphql e React
+                            <br />,Regex, Graphql e React
                         </p>
 
                     </li>
@@ -28,14 +28,12 @@ const Services = () => {
                         <i className="fa-sharp fa-solid fa-pen-to-square"></i>
                         <h3>• Linguagem de Consultas</h3>
                         <p>SQL</p>
-
                     </li>
                     <li>
                         <i className="fa-sharp fa-solid fa-pen-to-square"></i>
                         <h3>• Banco de Dados</h3>
                         <p> Relacional: Postgress, Sqlite3 e MySql.
                             Não Relacional: MongoDB</p>
-
                     </li>
                     <li>
                         <i className="fa-sharp fa-solid fa-pen-to-square"></i>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
@@ -202,7 +203,6 @@ const Skills = () => {
                         <li><FontAwesomeIcon icon={faStar} /></li>
                         <li><FontAwesomeIcon icon={faStar} /></li>
                         <li><FontAwesomeIcon icon={farStar} /></li>
-
                     </ul>
                 </div>
             </div>
