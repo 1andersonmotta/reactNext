@@ -1,11 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 const ProjectsComponent = () => {
-    // const listAll = document.querySelectorAll('.projects_armazenamento ul li');
     const listAllRef = useRef(null);
-
-    // const buttonGeral = document.querySelectorAll('.projects_models ul li');
-    const buttonGeral = useRef();
+    const buttonGeral = useRef(null);
 
     function listAll() {
         if (listAllRef.current) {
@@ -18,65 +15,6 @@ const ProjectsComponent = () => {
             };
         }
     }
-
-
-    // const removeClick = (index) => {
-    //     buttonGeral.forEach((item) => {
-    //         item.classList.remove('ativo');
-    //     });
-    //     buttonGeral[index].classList.add('ativo');
-    // };
-
-    // const showLista = (lista, buttom = 'all') => {
-    //     lista.forEach((item) => {
-    //         item.classList.remove('ativo');
-    //     });
-
-    //     switch (buttom) {
-    //         case 'reais':
-    //             [0, 1, 2, 3, 4, 5].forEach((i) => lista[i].classList.add('ativo'));
-    //             break;
-    //         case 'estudo':
-    //             [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32].forEach((i) => lista[i].classList.add('ativo'));
-    //             break;
-    //         case 'website':
-    //             [8, 9, 16, 23, 26, 27, 28, 29, 31, 32].forEach((i) => lista[i].classList.add('ativo'));
-    //             break;
-    //         case 'all':
-    //         default:
-    //             [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32].forEach((i) => lista[i].classList.add('ativo'));
-    //             break;
-    //     }
-    // };
-
-    // buttonGeral.forEach((event, index) => {
-    //     event.addEventListener('click', () => {
-    //         removeClick(index);
-    //     });
-    // });
-
-    // const handleButtonClick = (e) => {
-    //     let currentButton = e.target;
-    //     if (currentButton.classList.contains('all')) {
-    //         showLista(listAll);
-    //     }
-    //     if (currentButton.classList.contains('reais')) {
-    //         showLista(listAll, 'reais');
-    //     }
-    //     if (currentButton.classList.contains('estudo')) {
-    //         showLista(listAll, 'estudo');
-    //     }
-    //     if (currentButton.classList.contains('website')) {
-    //         showLista(listAll, 'website');
-    //     }
-    //     if (currentButton.classList.contains('all')) {
-    //         showLista(listAll, 'all');
-    //     }
-    // };
-
-    // buttonGeral.forEach((item) => {
-    //     item.addEventListener('click', handleButtonClick);
-    // });
 
     return (
         <section className="projects" id='projeto'>
