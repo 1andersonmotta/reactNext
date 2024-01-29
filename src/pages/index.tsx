@@ -1,7 +1,3 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-
 import BackgroundComponent from "@/components/background-video";
 import Header from "@/components/header";
 import Component from "@/components/component";
