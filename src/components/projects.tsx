@@ -1,18 +1,19 @@
 import React, { useRef } from 'react';
 
 const ProjectsComponent = () => {
-    const listAllRef = useRef(null);
-    const buttonGeral = useRef(null);
+    const listAllRef = useRef<HTMLUListElement>(null);
+    const buttonGeral = useRef<HTMLLIElement>(null);
 
     function listAll() {
-        if (listAllRef.current) {
-            if (buttonGeral.current.innerText == "Exibir") {
-                listAllRef.current.style.display = "grid"
-                buttonGeral.current.innerText = "Ocultar"
-            } else if (listAllRef.current.style.display == "grid" && buttonGeral.current.innerText == "Ocultar") {
-                listAllRef.current.style.display = "none"
-                buttonGeral.current.innerText = "Exibir"
-            };
+        if (listAllRef.current && buttonGeral.current) {
+            const buttonText = buttonGeral.current.innerText;
+            if (buttonText === "Exibir") {
+                listAllRef.current.style.display = "grid";
+                buttonGeral.current.innerText = "Ocultar";
+            } else if (listAllRef.current.style.display === "grid" && buttonText === "Ocultar") {
+                listAllRef.current.style.display = "none";
+                buttonGeral.current.innerText = "Exibir";
+            }
         }
     }
 
@@ -64,25 +65,30 @@ const ProjectsComponent = () => {
                     <li className='ativo' id="estudo"><img src="/img/estacionamento.png" alt="imgEstacionamento" />
                         <p>Estacionamento: Projeto Backend para um serviço de estacionamento com CRUD completo para controle
                             de Veiculos e Atividade utilizando banco não-relacional Sqlite,
-                            JavaScript e Express.</p>
+                            JavaScript e Express.
+                        </p>
                     </li>
                     <li className='ativo' id="estudo"><img src="/img/jogo.png" alt="imgEstacionamento" />
                         <p>Jogo Multiplayer: Projeto de um Jogo multiplayer com JavaScript, SocketIO para
-                            comunicação sentre Server e Client, manipulaçao de DOM. Projeto Felipe Dechamps.</p>
+                            comunicação sentre Server e Client, manipulaçao de DOM. Projeto Felipe Dechamps.
+                        </p>
                     </li>
                     <li className='ativo' id="website"><img src="/img/html.png" alt="imgEstacionamento" />
                         <p>Site Google-Glass: Projeto de criação de um Site com JavaScript, HTML e CSS para venda do
-                            Google-Glass. Curso em Video com Gustavo Guanabara. </p>
+                            Google-Glass. Curso em Video com Gustavo Guanabara.
+                        </p>
                     </li>
                     <li className='ativo' id="website"><img src="/img/sssite.png" alt="imgSite" />
                         <p>Site SS-Produções: Projeto pessoal de criação de um Site para treinamento de JavaScript, HTML,
                             CSS,
-                            manipulação de dados, imagens, audio, videos e animações.</p>
+                            manipulação de dados, imagens, audio, videos e animações.
+                        </p>
                     </li>
                     <li className='ativo' id="estudo"><img src="/img/git.png" alt="imgGit" />
                         <p>Projeto de uma Aplicação back-end que conecta a API do GitHub seleciona os
                             Repositórios mais bem avaliados de uma lista de linguagem e exibe com metodo para favoritar /
-                            desfavoritar - JavaScript, Axios, Express e PostgreSQL com Docker.</p>
+                            desfavoritar - JavaScript, Axios, Express e PostgreSQL com Docker.
+                        </p>
                     </li>
                     <li className='ativo' id="estudo"><img src="/img/login.png" alt="imgGit" />
                         <p>Projeto de criação de Aplicações para Login com diferentes Abordagens, Layout's, Validações
@@ -206,8 +212,9 @@ const ProjectsComponent = () => {
                     </li>
                 </ul>
             </div>
-            <a className="vermais" href="https://github.com/1andersonmotta" target="_blank">Veja mais Projetos <i
-                className="fa-brands fa-github-alt"></i></a>
+            <a className="vermais" href="https://github.com/1andersonmotta" target="_blank">Veja mais Projetos
+                <i className="fa-brands fa-github-alt"></i>
+            </a>
 
         </section>
     )
