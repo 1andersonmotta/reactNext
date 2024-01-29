@@ -4,7 +4,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 import BackgroundComponent from "@/components/background-video";
 import Header from "@/components/header";
-import Anime from "@/components/anime";
 import Component from "@/components/component";
 import Main from "@/components/main";
 import Services from "@/components/services";
@@ -27,7 +26,6 @@ export default function Home() {
       <Experience></Experience>
       <Skills></Skills>
       <Facts></Facts>
-      {/* <Anime></Anime> */}
       <ProjectsComponent />
       <FooterComponent />
     </main>
