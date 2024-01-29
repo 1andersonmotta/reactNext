@@ -1,3 +1,4 @@
+//Treinando a manipulação de Icones com Font AwesomeS
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faHandHoldingDollar,
