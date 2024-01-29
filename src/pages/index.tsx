@@ -1,4 +1,3 @@
-import BackgroundComponent from "@/components/background-video";
 import Header from "@/components/header";
 import Component from "@/components/component";
 import Main from "@/components/main";
@@ -15,7 +14,6 @@ export default function Home() {
     <main >
       <Video></Video>
       <Header />
-      <BackgroundComponent></BackgroundComponent>
       <Component></Component>
       <Main></Main>
       <Services></Services>
