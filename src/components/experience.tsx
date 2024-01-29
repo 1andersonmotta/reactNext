@@ -3,21 +3,15 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBook, faCircle, faHandshakeSimple } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Adicione os ícones à biblioteca
 library.add(faHandshakeSimple, faCircle, faBook);
 
 const Experience = () => {
     const [contador, setContador] = useState(1);
 
-    const divExperienciaRef = useRef([]);
-    const liExperienciaRef = useRef([]);
-    const divEducationRef = useRef([]);
-    const liEducationRef = useRef([]);
-
-    // const divExperienciaRef = useRef<NodeListOf<HTMLDivElement>>(document.querySelectorAll('.experience_content div'));
-    // const liExperienciaRef = useRef<NodeListOf<HTMLLIElement>>(document.querySelectorAll('.experience_content ul li'));
-    // const divEducationRef = useRef<NodeListOf<HTMLDivElement>>(document.querySelectorAll('.education_content div'));
-    // const liEducationRef = useRef<NodeListOf<HTMLLIElement>>(document.querySelectorAll('.education_content ul li'));
+    const divExperienciaRef = useRef<any>([]);
+    const liExperienciaRef = useRef<any>([]);
+    const divEducationRef = useRef<any>([]);
+    const liEducationRef = useRef<any>([]);
 
     useEffect(() => {
         divExperienciaRef.current = document.querySelectorAll('.experience_content div');
@@ -30,37 +24,37 @@ const Experience = () => {
         liExperienciaRef.current[0].classList.add('ativo');
         liEducationRef.current[0].classList.add('ativo');
 
-        function slideShow(index: number, isEducation = false) {
+        function slideShow(index: string | number, isEducation = false) {
             const divList = isEducation ? divEducationRef.current : divExperienciaRef.current;
             const liList = isEducation ? liEducationRef.current : liExperienciaRef.current;
 
-            divList.forEach((div) => div.classList.remove('ativo'));
-            liList.forEach((botao) => botao.classList.remove('ativo'));
+            divList.forEach((div: { classList: { remove: (arg0: string) => any; }; }) => div.classList.remove('ativo'));
+            liList.forEach((botao: { classList: { remove: (arg0: string) => any; }; }) => botao.classList.remove('ativo'));
 
             divList[index].classList.add('ativo');
             liList[index].classList.add('ativo');
         }
 
-        liExperienciaRef.current.forEach((event, index) => {
+        liExperienciaRef.current.forEach((event: { addEventListener: (arg0: string, arg1: () => void) => void; }, index: string | number) => {
             event.addEventListener('click', () => {
                 slideShow(index);
             });
         });
 
-        liEducationRef.current.forEach((event, index) => {
+        liEducationRef.current.forEach((event: { addEventListener: (arg0: string, arg1: () => void) => void; }, index: string | number) => {
             event.addEventListener('click', () => {
                 slideShow(index, true);
             });
         });
 
         return () => {
-            liExperienciaRef.current.forEach((event, index) => {
+            liExperienciaRef.current.forEach((event: { removeEventListener: (arg0: string, arg1: () => void) => void; }, index: string | number) => {
                 event.removeEventListener('click', () => {
                     slideShow(index);
                 });
             });
 
-            liEducationRef.current.forEach((event, index) => {
+            liEducationRef.current.forEach((event: { removeEventListener: (arg0: string, arg1: () => void) => void; }, index: string | number) => {
                 event.removeEventListener('click', () => {
                     slideShow(index, true);
                 });
@@ -81,16 +75,6 @@ const Experience = () => {
         }
         liEducation[index].classList.add('ativo');
     }
-
-    // function show() {
-    //     if (contador === 7) {
-    //         slideShow2(7);
-    //         setContador(0);
-    //     } else {
-    //         slideShow2(contador);
-    //         setContador((prevContador) => prevContador + 1);
-    //     }
-    // }
 
     function clickou() {
         if (contador === 7) {
@@ -200,7 +184,6 @@ const Experience = () => {
                         <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
                         <li><i ><FontAwesomeIcon icon={faCircle} /></i></li>
                     </ul>
-                    {/* Adicione os demais itens aqui */}
                     <ul>
                         {Array.from({ length: 7 }).map((_, index) => (
                             <li key={index}><i></i></li>
