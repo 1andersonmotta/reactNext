@@ -87,8 +87,6 @@ header .navegacao-primaria li a:hover::after {
     border-bottom: 4px solid #ddbf19;
 }
 
-
-
 /* DOWNLOAD CV SECAO */
 
 .section-div {
@@ -137,7 +135,6 @@ header .navegacao-primaria li a:hover::after {
     padding: 15px 40px;
     border-radius: 5px;
     border: 2px solid white;
-
 }
 
 .section-div img {
@@ -232,7 +229,6 @@ main .sobre {
     max-width: 100%;
     border-radius: 4px;
     filter: blur(0);
-
 }
 
 .sobre_conteudo {
@@ -382,7 +378,6 @@ main .sobre {
         gap: 10px;
         text-align: center;
         width: auto !important;
-
     }
 
     .projects_models {
@@ -424,14 +419,6 @@ main .sobre {
 }
 
 /* SEÇÃO SERVICES */
-
-.services {
-    margin-top: 0px;
-    /* padding: 60px; */
-    /* background-color: #151515; */
-    /* background-color: #151515c3; */
-
-}
 
 .my_services {
     /* padding: 60px; */
@@ -522,15 +509,10 @@ main .sobre {
 
 .my_resume {
     color: white;
-    /* background-color: #151515c3; */
-
 }
 
 .resume_generico {
     padding: 30px;
-    /* display: grid; */
-
-    /* grid-template-columns: 1fr 1fr; */
     justify-content: center;
     gap: 10px;
     align-items: start;
@@ -741,8 +723,6 @@ main .sobre {
     grid-column: 3/-1;
     grid-row: 1;
     display: flex;
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: 1fr;
 }
 
@@ -854,10 +834,6 @@ main .sobre {
     padding: 30px;
     display: grid;
     justify-content: center;
-    /* gap: 80px; */
-    /* background-color: #000000; */
-    /* background-color: #151515c3; */
-
 }
 
 .projects ul {
@@ -885,7 +861,6 @@ main .sobre {
 }
 
 .projects_armazenamento ul {
-    /* display: grid; */
     display: none;
     margin-top: 80px;
     gap: 120px 50px;
@@ -981,7 +956,6 @@ div#diferencial {
     max-width: auto;
     height: 100%;
     background-color: #151515c3;
-
     padding: 50px;
 }
 
@@ -989,9 +963,6 @@ div#diferencial {
 /*FOOTER*/
 
 footer {
-    /* background-color: #000000; */
-    /* background-color: #151515c3; */
-
     padding: 30px;
 }
 
@@ -1005,9 +976,6 @@ footer {
 }
 
 .footer_sociais li {
-    /* background-color: #000000; */
-    /* border-radius: 50%; */
-    /* border: 1px solid #333333; */
     margin-top: 20px;
 }
 
@@ -1016,21 +984,6 @@ footer {
     font-size: 1.5rem;
     color: #f7f7f7;
 }
-
-/* .footer_sociais li:hover {
-    transition: .3s ease-in-out;
-    cursor: pointer;
-    border: 1px solid #333333;
-} */
-
-/* .footer_sociais::before {
-    content: '';
-    height: 5px;
-    width: 200px;
-    position: absolute;
-    bottom: -30px;
-    background-color: #f2f2f2;
-} */
 
 footer .footer_comercial {
     text-align: center;
