@@ -5,7 +5,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Main = () => {
-
     return (
         <main>
             <article aria-label="seção sobre mim" className="sobre" id="sobre">
