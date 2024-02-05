@@ -210,6 +210,13 @@ const ProjectsComponent = () => {
                             manipulação de eixo X e Y
                         </p>
                     </li>
+                    <li className='ativo' id="estudo"><img src="/img/port_react.png" alt="imgGit" />
+                        <p>Replicando meu Portfólio em React. Inicialmente criado em Javascript, Html e Css. A transição
+                            para
+                            React trouxe benefícios notáveis, incluindo uma arquitetura mais organizada e uma experiência do
+                            usuário mais dinâmica e responsiva.
+                        </p>
+                    </li>
                 </ul>
             </div>
             <a className="vermais" href="https://github.com/1andersonmotta" target="_blank">Veja mais Projetos
