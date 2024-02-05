@@ -151,8 +151,8 @@ const Experience = () => {
                             - Animações<br />
                             - Animações II<br />
                             - Uso de um editor de código<br />
-                            - Intro to Webpages<br />
-                            - Automation<br />
+                            - Introdução Webpages<br />
+                            - Automações<br />
                         </p>
                     </div>
                     <div>
